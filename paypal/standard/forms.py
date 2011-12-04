@@ -80,6 +80,7 @@ class PayPalPaymentsForm(forms.Form):
     lc = forms.CharField(widget=ValueHiddenInput())
     page_style = forms.CharField(widget=ValueHiddenInput())
     cbt = forms.CharField(widget=ValueHiddenInput())
+    paymentaction = forms.CharField(widget=ValueHiddenInput()) #use e.g. for authorization
     
     # IPN control.
     notify_url = forms.CharField(widget=ValueHiddenInput())
